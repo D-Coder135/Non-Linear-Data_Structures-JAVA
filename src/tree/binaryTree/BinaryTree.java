@@ -103,6 +103,8 @@ class BinaryTree<E> implements Serializable {
      * @return The left subtree or null if either the root ot the left subtree is null.
      */
     public BinaryTree<E> getLeftSubtree() {
+        if (root != null && root.left != null) {
 
+        }
     }
 }
