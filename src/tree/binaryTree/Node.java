@@ -13,5 +13,8 @@ import java.io.Serializable;
 
 class Node<E> implements Serializable {
     // Data Fields
-    /** The information stored in this node. */
+    /**
+     * The information stored in this node.
+     */
+    protected E data;
 }
