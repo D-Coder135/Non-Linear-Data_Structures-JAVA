@@ -39,6 +39,8 @@ class Node<E> implements Serializable {
      * @param data The data to store in this node.
      */
     public Node(E data) {
-
+        this.data = data;
+        this.left = null;
+        this.right = null;
     }
 }
