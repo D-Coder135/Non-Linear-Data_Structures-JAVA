@@ -90,6 +90,8 @@ class BinaryTree<E> implements Serializable {
         }
         if (rightTree != null) {
             root.right = rightTree.root;
+        } else {
+
         }
     }
 }
