@@ -13,7 +13,8 @@ import java.io.Serializable;
  * Class to encapsulate a tree node.
  */
 
-class BinaryTree<E> implements Serializable {
+class BinaryTree<E> {
+
     // Data Fields
 
     /**
