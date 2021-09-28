@@ -94,4 +94,6 @@ class BinaryTree<E> implements Serializable {
             root.right = null;
         }
     }
+
+    // Methods
 }
