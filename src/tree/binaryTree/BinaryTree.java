@@ -119,7 +119,7 @@ class BinaryTree<E> implements Serializable {
         if (root != null && root.right != null) {
             return new BinaryTree<>(root.right);
         } else {
-
+            return null;
         }
     }
 
