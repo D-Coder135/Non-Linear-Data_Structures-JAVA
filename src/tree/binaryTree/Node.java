@@ -25,4 +25,7 @@ class Node<E> implements Serializable {
      * Reference to the left child.
      */
     protected Node<E> left;
+
+    /** Reference to the right child.
+     * */
 }
