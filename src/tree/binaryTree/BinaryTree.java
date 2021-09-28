@@ -9,6 +9,9 @@ package tree.binaryTree;
 
 import java.io.Serializable;
 
+/**
+ * Class for a binary tree that stores type E objects.
+ */
 class BinaryTree<E> implements Serializable {
 
     /**
