@@ -45,4 +45,6 @@ class Node<E> implements Serializable {
     }
 
     // Methods
+    /** Return a string representation of the node.
+     * @return A string representation of the data fields.*/
 }
