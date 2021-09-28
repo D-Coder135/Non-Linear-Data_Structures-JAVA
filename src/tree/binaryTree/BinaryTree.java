@@ -71,6 +71,6 @@ class BinaryTree<E> implements Serializable {
     // Constructors
 
     public BinaryTree() {
-
+        root = null;
     }
 }
