@@ -60,4 +60,7 @@ class BinaryTree<E> implements Serializable {
             return data.toString();
         }
     }
+
+    // Data Fields
+
 }
