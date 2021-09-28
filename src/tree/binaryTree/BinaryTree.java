@@ -9,11 +9,11 @@ package tree.binaryTree;
 
 import java.io.Serializable;
 
-/**
- * Class to encapsulate a tree node.
- */
-
 class BinaryTree<E> implements Serializable {
+
+    /**
+     * Class to encapsulate a tree node.
+     */
 
     protected static class Node<E> implements Serializable {
         // Data Fields
