@@ -30,4 +30,6 @@ class Node<E> implements Serializable {
      * Reference to the right child.
      */
     protected Node<E> right;
+
+    // Constructors
 }
