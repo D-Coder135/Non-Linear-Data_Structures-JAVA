@@ -13,7 +13,7 @@ import java.io.Serializable;
  * Class to encapsulate a tree node.
  */
 
-class Node<E> implements Serializable {
+class BinaryTree<E> implements Serializable {
     // Data Fields
 
     /**
@@ -24,12 +24,12 @@ class Node<E> implements Serializable {
     /**
      * Reference to the left child.
      */
-    protected Node<E> left;
+    protected BinaryTree<E> left;
 
     /**
      * Reference to the right child.
      */
-    protected Node<E> right;
+    protected BinaryTree<E> right;
 
     // Constructors
 
@@ -38,7 +38,7 @@ class Node<E> implements Serializable {
      *
      * @param data The data to store in this node.
      */
-    public Node(E data) {
+    public BinaryTree(E data) {
         this.data = data;
         this.left = null;
         this.right = null;
