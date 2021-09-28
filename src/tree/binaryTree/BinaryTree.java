@@ -96,4 +96,8 @@ class BinaryTree<E> implements Serializable {
     }
 
     // Methods
+
+    /** Return the left subtree.
+     * @return The left subtree or null if either the root ot the left subtree is null.
+     * */
 }
