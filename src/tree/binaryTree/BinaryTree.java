@@ -29,12 +29,12 @@ class BinaryTree<E> implements Serializable {
         /**
          * Reference to the left child.
          */
-        protected BinaryTree<E> left;
+        protected Node<E> left;
 
         /**
          * Reference to the right child.
          */
-        protected BinaryTree<E> right;
+        protected Node<E> right;
 
         // Constructors
 
