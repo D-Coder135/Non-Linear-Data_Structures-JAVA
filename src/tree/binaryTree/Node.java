@@ -9,12 +9,18 @@ package tree.binaryTree;
 
 import java.io.Serializable;
 
-/** Class to encapsulate a tree node. */
+/**
+ * Class to encapsulate a tree node.
+ */
 
 class Node<E> implements Serializable {
     // Data Fields
+
     /**
      * The information stored in this node.
      */
     protected E data;
+
+    /** Reference to the left child.
+     * */
 }
