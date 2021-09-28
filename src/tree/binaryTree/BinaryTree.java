@@ -15,43 +15,46 @@ import java.io.Serializable;
 
 class BinaryTree<E> {
 
-    // Data Fields
+    protected static class Node<E> implements Serializable {
+        // Data Fields
 
-    /**
-     * The information stored in this node.
-     */
-    protected E data;
+        /**
+         * The information stored in this node.
+         */
+        protected E data;
 
-    /**
-     * Reference to the left child.
-     */
-    protected BinaryTree<E> left;
+        /**
+         * Reference to the left child.
+         */
+        protected BinaryTree<E> left;
 
-    /**
-     * Reference to the right child.
-     */
-    protected BinaryTree<E> right;
+        /**
+         * Reference to the right child.
+         */
+        protected BinaryTree<E> right;
 
-    // Constructors
+        // Constructors
 
-    /**
-     * Construct a node with given data and no children.
-     *
-     * @param data The data to store in this node.
-     */
-    public BinaryTree(E data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
+        /**
+         * Construct a node with given data and no children.
+         *
+         * @param data The data to store in this node.
+         */
+        public Node(E data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
 
-    // Methods
-    /**
-     * Return a string representation of the node.
-     *
-     * @return A string representation of the data fields.
-     */
-    public String toString() {
-        return data.toString();
+        // Methods
+
+        /**
+         * Return a string representation of the node.
+         *
+         * @return A string representation of the data fields.
+         */
+        public String toString() {
+            return data.toString();
+        }
     }
 }
