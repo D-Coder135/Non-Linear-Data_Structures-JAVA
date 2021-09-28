@@ -67,4 +67,6 @@ class BinaryTree<E> implements Serializable {
      * The root of the binary tree
      */
     protected Node<E> root;
+
+    // Constructors
 }
