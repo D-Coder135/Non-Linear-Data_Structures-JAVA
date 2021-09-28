@@ -7,5 +7,5 @@
 
 package tree.binaryTree;
 
-public class Node {
+class Node<E> {
 }
