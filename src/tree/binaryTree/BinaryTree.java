@@ -73,4 +73,8 @@ class BinaryTree<E> implements Serializable {
     public BinaryTree() {
         root = null;
     }
+
+    protected BinaryTree(Node<E> root) {
+
+    }
 }
