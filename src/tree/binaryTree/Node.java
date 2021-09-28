@@ -32,7 +32,13 @@ class Node<E> implements Serializable {
     protected Node<E> right;
 
     // Constructors
-    /** Construct a node with given data and no children.
+
+    /**
+     * Construct a node with given data and no children.
+     *
      * @param data The data to store in this node.
-     * */
+     */
+    public Node(E data) {
+
+    }
 }
