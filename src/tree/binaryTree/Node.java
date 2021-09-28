@@ -43,4 +43,6 @@ class Node<E> implements Serializable {
         this.left = null;
         this.right = null;
     }
+
+    // Methods
 }
