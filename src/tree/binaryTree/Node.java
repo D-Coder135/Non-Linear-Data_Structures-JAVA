@@ -51,6 +51,6 @@ class Node<E> implements Serializable {
      * @return A string representation of the data fields.
      */
     public String toString() {
-
+        return data.toString();
     }
 }
