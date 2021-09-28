@@ -7,5 +7,7 @@
 
 package tree.binaryTree;
 
-class Node<E> {
+import java.io.Serializable;
+
+class Node<E> implements Serializable {
 }
