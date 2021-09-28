@@ -89,7 +89,7 @@ class BinaryTree<E> implements Serializable {
             root.left = null;
         }
         if (rightTree != null) {
-
+            root.right = rightTree.root;
         }
     }
 }
