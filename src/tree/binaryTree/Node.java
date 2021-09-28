@@ -9,5 +9,7 @@ package tree.binaryTree;
 
 import java.io.Serializable;
 
+/** Class to encapsulate a tree node. */
+
 class Node<E> implements Serializable {
 }
