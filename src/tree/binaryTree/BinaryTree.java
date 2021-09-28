@@ -75,6 +75,6 @@ class BinaryTree<E> implements Serializable {
     }
 
     protected BinaryTree(Node<E> root) {
-
+        this.root = root;
     }
 }
