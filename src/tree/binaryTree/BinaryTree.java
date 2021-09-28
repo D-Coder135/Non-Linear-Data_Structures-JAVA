@@ -63,5 +63,8 @@ class BinaryTree<E> implements Serializable {
 
     // Data Fields
 
-    /** The root of the binary tree */
+    /**
+     * The root of the binary tree
+     */
+    protected Node<E> root;
 }
