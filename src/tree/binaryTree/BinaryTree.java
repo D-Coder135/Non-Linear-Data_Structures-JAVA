@@ -150,6 +150,8 @@ class BinaryTree<E> implements Serializable {
      * @param sb    The StringBuilder to save the output
      */
     private void toString(Node<E> node, int depth, StringBuilder sb) {
+        for (int i = 0; i < depth; i++) {
 
+        }
     }
 }
