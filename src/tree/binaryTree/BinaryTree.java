@@ -153,5 +153,8 @@ class BinaryTree<E> implements Serializable {
         for (int i = 0; i < depth; i++) {
             sb.append(" ");
         }
+        if (node == null) {
+            sb.append("null\n");
+        }
     }
 }
