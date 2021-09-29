@@ -140,4 +140,11 @@ class BinaryTree<E> implements Serializable {
         toString(root, 1, stringBuilder);
         return stringBuilder.toString();
     }
+
+    /** Converts a sub-tree to a string.
+     * Performs a preorder traversal.
+     * @param node The local root
+     * @param depth The depth
+     * @param sb The StringBuilder to save the output
+     * */
 }
