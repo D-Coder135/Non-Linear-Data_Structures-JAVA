@@ -132,6 +132,10 @@ class BinaryTree<E> implements Serializable {
         return (root.left == null && root.right == null);
     }
 
-    /** Generates a string representation of the BinaryTree */
+    /**
+     * Generates a string representation of the BinaryTree
+     */
+    public String toString() {
 
+    }
 }
