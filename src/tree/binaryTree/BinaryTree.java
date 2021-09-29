@@ -151,7 +151,7 @@ class BinaryTree<E> implements Serializable {
      */
     private void toString(Node<E> node, int depth, StringBuilder sb) {
         for (int i = 0; i < depth; i++) {
-
+            sb.append(" ");
         }
     }
 }
