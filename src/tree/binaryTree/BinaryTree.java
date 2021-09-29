@@ -123,8 +123,13 @@ class BinaryTree<E> implements Serializable {
         }
     }
 
-    /** Determine whether this tree is a leaf.
+    /**
+     * Determine whether this tree is a leaf.
+     *
      * @return true if the root has no children.
-     * */
+     */
+    public boolean isLeaf() {
+
+    }
 
 }
