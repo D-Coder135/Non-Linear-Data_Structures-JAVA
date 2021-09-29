@@ -136,6 +136,6 @@ class BinaryTree<E> implements Serializable {
      * Generates a string representation of the BinaryTree
      */
     public String toString() {
-
+        StringBuilder stringBuilder = new StringBuilder();
     }
 }
