@@ -157,6 +157,7 @@ class BinaryTree<E> implements Serializable {
             sb.append("null\n");
         } else {
             sb.append(node.toString());
+            sb.append("\n");
         }
     }
 }
