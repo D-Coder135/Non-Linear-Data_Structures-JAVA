@@ -150,9 +150,7 @@ class BinaryTree<E> implements Serializable {
      * @param sb    The StringBuilder to save the output
      */
     private void toString(Node<E> node, int depth, StringBuilder sb) {
-        for (int i = 0; i < depth; i++) {
-            sb.append(" ");
-        }
+        sb.append(" ".repeat(Math.max(0, depth)));
         if (node == null) {
             sb.append("null\n");
         } else {
