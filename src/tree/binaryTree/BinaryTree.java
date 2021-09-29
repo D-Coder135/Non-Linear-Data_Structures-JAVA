@@ -129,7 +129,7 @@ class BinaryTree<E> implements Serializable {
      * @return true if the root has no children.
      */
     public boolean isLeaf() {
-
+        return (root.left == null && root.right == null);
     }
 
 }
