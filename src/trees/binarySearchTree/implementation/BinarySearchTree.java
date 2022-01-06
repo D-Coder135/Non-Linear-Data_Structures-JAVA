@@ -52,6 +52,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
 
     @Override
     public boolean add(E item) {
+        root = add(root, item);
         return false;
     }
 
