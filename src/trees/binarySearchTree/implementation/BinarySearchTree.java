@@ -143,6 +143,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         } else {
             // item is at local root
             deleteReturn = localRoot.data;
+            if (localRoot.left == null) {
+
+            }
         }
         return null;
     }
