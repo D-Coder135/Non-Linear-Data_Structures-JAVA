@@ -110,6 +110,19 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         return deleteReturn;
     }
 
+    /**
+     * Recursive delete method.
+     * post: The item is not in the tree;
+     * deleteReturn is equal to the deleted item
+     * as it was stored in the tree or null
+     * if the item was not found.
+     *
+     * @param localRoot The root of the current subtree
+     * @param item      The item to be deleted
+     * @return The modified local root that does not contain
+     * the item
+     */
+
     private Node<E> delete(Node<E> localRoot, E item, boolean deleteReturn) {
         return null;
     }
