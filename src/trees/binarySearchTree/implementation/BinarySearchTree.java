@@ -12,6 +12,10 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * @param target The Comparable object being sought
      * @return The object, if found, otherwise null
      */
+    @Override
+    public E find(E target) {
+        return null;
+    }
 
     @Override
     public boolean add(E item) {
@@ -21,11 +25,6 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
     @Override
     public boolean contains(E target) {
         return false;
-    }
-
-    @Override
-    public E find(E target) {
-        return null;
     }
 
     @Override
