@@ -134,6 +134,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         int compResult = item.compareTo(localRoot.data);
         if (compResult < 0) {
             // item is smaller than localRoot.data
+            localRoot.left = delete(localRoot.left, item, deleteReturn);
         }
         return null;
     }
