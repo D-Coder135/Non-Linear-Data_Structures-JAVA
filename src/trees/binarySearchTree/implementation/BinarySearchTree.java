@@ -105,6 +105,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
 
     @Override
     public E delete(E target) {
+        boolean deleteReturn = false;
         root = delete(root, target);
         return null;
     }
