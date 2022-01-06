@@ -68,7 +68,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * inserted item
      */
     private Node<E> add(Node<E> localRoot, E item, boolean addReturn) {
-
+        if (localRoot == null) {
+            // item is equal to localRoot.data
+        }
     }
 
     @Override
