@@ -1,4 +1,4 @@
 package tree;
 
-public interface SearchTree {
+public interface SearchTree<E> {
 }
