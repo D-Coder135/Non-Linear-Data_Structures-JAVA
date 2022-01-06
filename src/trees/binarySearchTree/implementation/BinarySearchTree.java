@@ -77,6 +77,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             addReturn = false;
             return localRoot;
         } else if (item.compareTo(localRoot.data) < 0) {
+            // item is less than localRoot.data
 
         }
     }
