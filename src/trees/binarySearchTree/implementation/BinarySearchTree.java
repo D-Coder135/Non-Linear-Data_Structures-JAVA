@@ -28,6 +28,14 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         if (localRoot == null) {
             return null;
         }
+
+        // Compare the target with the data field at the root.
+        int compResult = target.compareTo(localRoot.data);
+        if (compResult == 0) {
+            return localRoot.data;
+        } else if (compResult < 0) {
+            return find(localRoot.left, target);
+        }
     }
 
     @Override
