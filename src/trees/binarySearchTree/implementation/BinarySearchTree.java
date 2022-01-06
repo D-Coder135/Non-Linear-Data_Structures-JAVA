@@ -171,6 +171,10 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         }
     }
 
+    private E findLargestChild(Node<E> parent) {
+        return null;
+    }
+
     @Override
     public boolean remove(E target) {
         return false;
