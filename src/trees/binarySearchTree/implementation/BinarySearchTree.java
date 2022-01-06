@@ -57,6 +57,17 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         return addReturn;
     }
 
+    /**
+     * Recursive add method.
+     * post: The data field addReturn is set true if the item is added to
+     * the tree, false if the item is already in the tree.
+     *
+     * @param localRoot The local root of the subtree
+     * @param item      The object to be inserted
+     * @return The new local root that now contains the
+     * inserted item
+     */
+
     @Override
     public boolean contains(E target) {
         return false;
