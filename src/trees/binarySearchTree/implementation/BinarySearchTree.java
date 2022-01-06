@@ -159,6 +159,8 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                     // Replace the left child with its left child.
                     localRoot.left = localRoot.left.left;
                     return localRoot;
+                } else {
+
                 }
             }
         }
