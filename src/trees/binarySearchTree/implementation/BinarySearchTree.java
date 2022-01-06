@@ -155,6 +155,8 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                     // The left child has no right child.
                     // Replace the data with the data in the left child.
                     localRoot.data = localRoot.left.data;
+
+                    // Replace the left child with its left child.
                 }
             }
         }
