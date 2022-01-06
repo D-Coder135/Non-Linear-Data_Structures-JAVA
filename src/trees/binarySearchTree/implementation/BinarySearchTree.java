@@ -17,6 +17,10 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         return find(root, target);
     }
 
+    private E find(Node<E> localRoot, E target) {
+
+    }
+
     @Override
     public boolean add(E item) {
         return false;
