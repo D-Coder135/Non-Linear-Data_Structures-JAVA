@@ -154,6 +154,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                 if (localRoot.left.right == null) {
                     // The left child has no right child.
                     // Replace the data with the data in the left child.
+                    localRoot.data = localRoot.left.data;
                 }
             }
         }
