@@ -151,6 +151,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                 return localRoot.left;
             } else {
                 // Node being deleted has 2 children, replace the data with inorder predecessor.
+                if (localRoot.left.right == null) {
+
+                }
             }
         }
         return null;
