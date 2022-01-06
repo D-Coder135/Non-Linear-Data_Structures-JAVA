@@ -54,7 +54,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
     public boolean add(E item) {
         boolean addReturn = false;
         root = add(root, item);
-        return false;
+        return addReturn;
     }
 
     @Override
