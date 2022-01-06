@@ -40,6 +40,16 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         }
     }
 
+    /**
+     * Starter method add.
+     * pre: The object to insert must implement the
+     * Comparable interface.
+     *
+     * @param item The object being inserted
+     * @return true if the object is inserted, false
+     * if the object already exists in the tree
+     */
+
     @Override
     public boolean add(E item) {
         return false;
