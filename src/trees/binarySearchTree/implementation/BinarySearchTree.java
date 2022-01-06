@@ -171,6 +171,18 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         }
     }
 
+
+    /**
+     * Find the node that is the
+     * inorder predecessor and replace it
+     * with its left child (if any).
+     * post: The inorder predecessor is removed from the tree.
+     *
+     * @param parent The parent of possible inorder
+     *               predecessor (ip)
+     * @return The data in the ip
+     */
+
     private E findLargestChild(Node<E> parent) {
         return null;
     }
