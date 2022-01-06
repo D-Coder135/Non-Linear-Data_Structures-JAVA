@@ -5,6 +5,14 @@ import trees.binaryTree.implementation.BinaryTree;
 
 public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> implements SearchTree<E> {
 
+    /**
+     * Starter method find.
+     * pre: The target object must implement the Comparable interface.
+     *
+     * @param target The Comparable object being sought
+     * @return The object, if found, otherwise null
+     */
+
     @Override
     public boolean add(E item) {
         return false;
