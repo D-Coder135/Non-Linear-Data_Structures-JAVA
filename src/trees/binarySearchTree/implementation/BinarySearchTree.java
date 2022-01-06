@@ -92,6 +92,17 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         return false;
     }
 
+    /**
+     * Starter method delete.
+     * post: The object is not in the tree.
+     *
+     * @param target The object to be deleted
+     * @return The object deleted from the tree
+     * or null if the object was not in the tree
+     * @throws ClassCastException if target does not implement
+     *                            Comparable
+     */
+
     @Override
     public E delete(E target) {
         return null;
