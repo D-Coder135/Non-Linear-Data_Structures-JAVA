@@ -160,7 +160,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                     localRoot.left = localRoot.left.left;
                     return localRoot;
                 } else {
-
+                    // Search for the inorder predecessor and replace deleted node's data with inorder predecessor.
                 }
             }
         }
