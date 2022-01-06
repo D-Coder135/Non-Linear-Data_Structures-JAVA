@@ -5,7 +5,7 @@
  *   File: Node.java
  */
 
-package tree.binaryTree;
+package tree.binaryTree.implementation;
 
 import java.io.Serializable;
 
