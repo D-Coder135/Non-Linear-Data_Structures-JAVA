@@ -83,6 +83,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         } else {
             // item is greater than localRoot.data
             localRoot.right = add(localRoot.right, item, addReturn);
+            return localRoot;
         }
     }
 
