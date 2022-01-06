@@ -6,4 +6,6 @@ public interface SearchTree<E> {
     boolean contains(E target);
 
     E find(E target);
+
+    E delete(E target);
 }
