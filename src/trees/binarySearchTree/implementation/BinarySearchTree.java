@@ -17,6 +17,13 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         return find(root, target);
     }
 
+    /**
+     * Recursive find method.
+     *
+     * @param localRoot The local subtree's root
+     * @param target    The object being sought
+     * @return The object, if found, otherwise null
+     */
     private E find(Node<E> localRoot, E target) {
 
     }
