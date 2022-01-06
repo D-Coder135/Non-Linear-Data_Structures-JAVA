@@ -25,7 +25,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * @return The object, if found, otherwise null
      */
     private E find(Node<E> localRoot, E target) {
-
+        if (localRoot == null) {
+            return null;
+        }
     }
 
     @Override
