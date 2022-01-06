@@ -184,6 +184,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      */
 
     private E findLargestChild(Node<E> parent) {
+        // If right child has no right child, it is the inorder predecessor.
         return null;
     }
 
