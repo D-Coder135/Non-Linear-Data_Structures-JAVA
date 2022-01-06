@@ -53,7 +53,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
     @Override
     public boolean add(E item) {
         boolean addReturn = false;
-        root = add(root, item);
+        root = add(root, item, addReturn);
         return addReturn;
     }
 
@@ -67,7 +67,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * @return The new local root that now contains the
      * inserted item
      */
-    private Node<E> add(Node<E> localRoot, E item) {
+    private Node<E> add(Node<E> localRoot, E item, boolean addReturn) {
 
     }
 
