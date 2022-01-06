@@ -162,6 +162,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                 } else {
                     // Search for the inorder predecessor and replace deleted node's data with inorder predecessor.
                     localRoot.data = findLargestChild(localRoot.left);
+                    return localRoot;
                 }
             }
         }
