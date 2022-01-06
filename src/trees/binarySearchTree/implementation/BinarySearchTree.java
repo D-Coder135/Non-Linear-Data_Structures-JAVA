@@ -131,7 +131,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         }
 
         // Search for item to delete
-
+        int compResult = item.compareTo(localRoot.data);
         return null;
     }
 
