@@ -187,6 +187,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         // If right child has no right child, it is the inorder predecessor.
         if (parent.right.right == null) {
             E returnValue = parent.right.data;
+            parent.right = parent.right.left;
         }
         return null;
     }
