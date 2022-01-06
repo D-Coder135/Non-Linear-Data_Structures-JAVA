@@ -8,4 +8,6 @@ public interface SearchTree<E> {
     E find(E target);
 
     E delete(E target);
+
+    boolean remove(E target);
 }
