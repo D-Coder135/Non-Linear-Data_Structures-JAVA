@@ -105,7 +105,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
 
     @Override
     public E delete(E target) {
-        boolean deleteReturn = false;
+        E deleteReturn = null;
         root = delete(root, target, deleteReturn);
         return deleteReturn;
     }
@@ -123,7 +123,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * the item
      */
 
-    private Node<E> delete(Node<E> localRoot, E item, boolean deleteReturn) {
+    private Node<E> delete(Node<E> localRoot, E item, E deleteReturn) {
         return null;
     }
 
