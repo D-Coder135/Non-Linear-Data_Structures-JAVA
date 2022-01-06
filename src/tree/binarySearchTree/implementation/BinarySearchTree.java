@@ -1,4 +1,4 @@
 package tree.binarySearchTree.implementation;
 
-public class BinarySearchTree {
+public class BinarySearchTree<E extends Comparable<E>> {
 }
