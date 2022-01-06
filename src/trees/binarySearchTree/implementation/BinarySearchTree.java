@@ -67,6 +67,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * @return The new local root that now contains the
      * inserted item
      */
+    private Node<E> add(Node<E> localRoot, E item) {
+
+    }
 
     @Override
     public boolean contains(E target) {
