@@ -189,8 +189,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             E returnValue = parent.right.data;
             parent.right = parent.right.left;
             return returnValue;
+        } else {
+            return findLargestChild(parent.right);
         }
-        return null;
     }
 
     @Override
