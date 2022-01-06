@@ -5,6 +5,10 @@ import trees.binaryTree.implementation.BinaryTree;
 
 public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> implements SearchTree<E> {
 
+    public boolean addReturn;
+
+    public E deleteReturn;
+
     /**
      * Starter method find.
      * pre: The target object must implement the Comparable interface.
@@ -52,8 +56,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
 
     @Override
     public boolean add(E item) {
-        boolean addReturn = false;
-        root = add(root, item, addReturn);
+        root = add(root, item);
         return addReturn;
     }
 
@@ -67,7 +70,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * @return The new local root that now contains the
      * inserted item
      */
-    private Node<E> add(Node<E> localRoot, E item, boolean addReturn) {
+    private Node<E> add(Node<E> localRoot, E item) {
         if (localRoot == null) {
             // item is equal to localRoot.data
             addReturn = true;
@@ -78,11 +81,11 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             return localRoot;
         } else if (item.compareTo(localRoot.data) < 0) {
             // item is less than localRoot.data
-            localRoot.left = add(localRoot.left, item, addReturn);
+            localRoot.left = add(localRoot.left, item);
             return localRoot;
         } else {
             // item is greater than localRoot.data
-            localRoot.right = add(localRoot.right, item, addReturn);
+            localRoot.right = add(localRoot.right, item);
             return localRoot;
         }
     }
@@ -105,8 +108,8 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
 
     @Override
     public E delete(E target) {
-        E deleteReturn = null;
-        root = delete(root, target, deleteReturn);
+
+        root = delete(root, target);
         return deleteReturn;
     }
 
@@ -123,7 +126,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      * the item
      */
 
-    private Node<E> delete(Node<E> localRoot, E item, E deleteReturn) {
+    private Node<E> delete(Node<E> localRoot, E item) {
         if (localRoot == null) {
             // item is not in the tree
             deleteReturn = null;
@@ -134,11 +137,11 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
         int compResult = item.compareTo(localRoot.data);
         if (compResult < 0) {
             // item is smaller than localRoot.data
-            localRoot.left = delete(localRoot.left, item, deleteReturn);
+            localRoot.left = delete(localRoot.left, item);
             return localRoot;
         } else if (compResult > 0) {
             // item is larger than localRoot.data
-            localRoot.right = delete(localRoot.right, item, deleteReturn);
+            localRoot.right = delete(localRoot.right, item);
             return localRoot;
         } else {
             // item is at local root
