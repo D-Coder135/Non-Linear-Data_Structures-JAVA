@@ -148,6 +148,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
                 return localRoot.right;
             } else if (localRoot.right == null) {
                 // If there is no right child, return left child.
+                return localRoot.left;
             }
         }
         return null;
