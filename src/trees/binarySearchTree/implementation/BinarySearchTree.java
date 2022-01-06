@@ -35,6 +35,8 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             return localRoot.data;
         } else if (compResult < 0) {
             return find(localRoot.left, target);
+        } else {
+            return find(localRoot.right, target);
         }
     }
 
