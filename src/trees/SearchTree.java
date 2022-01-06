@@ -1,4 +1,4 @@
-package tree;
+package trees;
 
 public interface SearchTree<E> {
     boolean add(E item);

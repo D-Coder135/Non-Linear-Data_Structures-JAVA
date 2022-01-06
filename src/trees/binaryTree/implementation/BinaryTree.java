@@ -5,14 +5,14 @@
  *   File: Node.java
  */
 
-package tree.binaryTree.implementation;
+package trees.binaryTree.implementation;
 
 import java.io.Serializable;
 
 /**
  * Class for a binary tree that stores type E objects.
  */
-class BinaryTree<E> implements Serializable {
+public class BinaryTree<E> implements Serializable {
 
     /**
      * Class to encapsulate a tree node.
