@@ -124,6 +124,11 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      */
 
     private Node<E> delete(Node<E> localRoot, E item, E deleteReturn) {
+        if (localRoot == null) {
+            // item is not in the tree
+            deleteReturn = null;
+            return localRoot;
+        }
         return null;
     }
 
