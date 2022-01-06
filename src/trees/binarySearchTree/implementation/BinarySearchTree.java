@@ -140,6 +140,8 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             // item is larger than localRoot.data
             localRoot.right = delete(localRoot.right, item, deleteReturn);
             return localRoot;
+        } else {
+
         }
         return null;
     }
