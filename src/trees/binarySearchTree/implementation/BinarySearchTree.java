@@ -129,6 +129,9 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
             deleteReturn = null;
             return localRoot;
         }
+
+        // Search for item to delete
+
         return null;
     }
 
