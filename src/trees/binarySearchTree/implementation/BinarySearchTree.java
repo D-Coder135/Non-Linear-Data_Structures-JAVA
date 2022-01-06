@@ -14,7 +14,7 @@ public class BinarySearchTree<E extends Comparable<E>> extends BinaryTree<E> imp
      */
     @Override
     public E find(E target) {
-        return null;
+        return find(root, target);
     }
 
     @Override
