@@ -1,5 +1,7 @@
 package trees.avlTree;
 
+import trees.binarySearchTree.implementation.BinarySearchTree;
+
 /**
  * This class extends the BinarySearchTree by adding the rotate operations.
  * Rotation will change the balance of a search tree while preserving the
@@ -7,5 +9,5 @@ package trees.avlTree;
  * Used as a common base class for self‐balancing trees.
  */
 
-public class BinarySearchTreeWithRotate<E extends Comparable<E>> {
+public class BinarySearchTreeWithRotate<E extends Comparable<E>> extends BinarySearchTree<E> {
 }
