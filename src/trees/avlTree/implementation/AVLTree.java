@@ -57,4 +57,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             return localRoot;
         }
     }
+
+    private AVLNode<E> rebalanceLeft(AVLNode<E> localRoot) {
+        return null;
+    }
 }
