@@ -33,6 +33,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
      * false if the item is already in the tree.
      */
     private AVLNode<E> add(AVLNode<E> localRoot, E item) {
+        if (localRoot == null) {
 
+        }
     }
 }
