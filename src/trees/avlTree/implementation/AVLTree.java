@@ -71,7 +71,9 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 
     private void decerementBalance(AVLNode<E> node) {
         node.balance--;
+        if (node.balance == AVLNode.BALANCED) {
 
+        }
 
     }
 
