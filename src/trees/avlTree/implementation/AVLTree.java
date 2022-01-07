@@ -48,6 +48,7 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             // item < data
             localRoot.left = add((AVLNode<E>) localRoot.left, item);
             if (increase) {
+                decerementBalance(localRoot);
 
             }
         }
