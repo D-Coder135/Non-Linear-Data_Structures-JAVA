@@ -20,6 +20,6 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
     public boolean add(E item) {
         increase = false;
         root = add((AVLNode<E>) root, item);
-        return super.add(item);
+        return addReturn;
     }
 }
