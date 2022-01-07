@@ -69,6 +69,10 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
         }
     }
 
+    private void decerementBalance(AVLNode<E> node) {
+
+    }
+
     /**
      * Method to rebalance left.
      *
