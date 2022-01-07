@@ -41,6 +41,7 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
 
         if (item.compareTo(localRoot.data) == 0) {
             // Item is already in the tree.
+            increase = false;
         }
     }
 }
