@@ -43,6 +43,7 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             // Item is already in the tree.
             increase = false;
             addReturn = false;
+            return localRoot;
         }
     }
 }
