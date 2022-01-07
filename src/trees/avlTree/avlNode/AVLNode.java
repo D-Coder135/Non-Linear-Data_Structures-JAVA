@@ -13,6 +13,8 @@ public class AVLNode<E> extends BinaryTree.Node<E> {
 
     public static final int BALANCED = 0;
 
+    public static final int RIGHT_HEAVY = 1;
+
     /**
      * Construct a node with the given item as the data field.
      *
