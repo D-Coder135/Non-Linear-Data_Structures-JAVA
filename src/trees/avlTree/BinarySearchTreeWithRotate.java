@@ -7,5 +7,5 @@ package trees.avlTree;
  * Used as a common base class for self‐balancing trees.
  */
 
-public class BinarySearchTreeWithRotate {
+public class BinarySearchTreeWithRotate<E extends Comparable<E>> {
 }
