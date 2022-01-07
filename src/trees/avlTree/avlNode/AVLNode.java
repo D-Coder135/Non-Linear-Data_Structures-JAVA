@@ -25,4 +25,9 @@ public class AVLNode<E> extends BinaryTree.Node<E> {
     public AVLNode(E item) {
         super(item);
     }
+
+    /** Return a string representation of this object.
+     The balance value is appended to the contents.
+     @return String representation of this object
+     */
 }
