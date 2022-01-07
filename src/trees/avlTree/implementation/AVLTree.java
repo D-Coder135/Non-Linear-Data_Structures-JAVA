@@ -69,6 +69,15 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
         }
     }
 
+    /**
+     * Method to rebalance left.
+     *
+     * @param localRoot Root of the AVL subtree that needs rebalancing
+     * @return a new localRoot
+     * @pre localRoot is the root of an AVL subtree that is critically left‐heavy.
+     * @post Balance is restored.
+     */
+
     private AVLNode<E> rebalanceLeft(AVLNode<E> localRoot) {
         return null;
     }
