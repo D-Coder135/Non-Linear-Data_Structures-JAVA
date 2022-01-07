@@ -35,6 +35,6 @@ public class AVLNode<E> extends BinaryTree.Node<E> {
 
     @Override
     public String toString() {
-        return super.toString();
+        return balance + ": " + super.toString();
     }
 }
