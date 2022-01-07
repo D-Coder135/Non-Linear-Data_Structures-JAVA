@@ -36,6 +36,7 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
         if (localRoot == null) {
             addReturn = true;
             increase = true;
+            return new AVLNode<>(item);
         }
     }
 }
