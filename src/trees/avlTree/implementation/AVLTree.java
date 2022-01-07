@@ -44,6 +44,8 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             increase = false;
             addReturn = false;
             return localRoot;
+        } else if (item.compareTo(localRoot.data) < 0) {
+
         }
     }
 }
