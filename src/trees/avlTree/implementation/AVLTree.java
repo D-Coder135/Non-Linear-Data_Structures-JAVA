@@ -1,4 +1,6 @@
 package trees.avlTree.implementation;
 
-public class AVLTree<E extends Comparable<E>> {
+import trees.avlTree.BinarySearchTreeWithRotate;
+
+public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate<E> {
 }
