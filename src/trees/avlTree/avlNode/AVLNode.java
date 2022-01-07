@@ -5,5 +5,5 @@ package trees.avlTree.avlNode;
  * BinaryTree.Node by adding the balance field.
  */
 
-public class AVLNode {
+public class AVLNode<E> {
 }
