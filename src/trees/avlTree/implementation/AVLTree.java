@@ -17,6 +17,7 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
      */
     @Override
     public boolean add(E item) {
+        increase = false;
         return super.add(item);
     }
 }
