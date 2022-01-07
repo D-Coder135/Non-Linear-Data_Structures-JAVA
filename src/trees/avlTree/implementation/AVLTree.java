@@ -23,11 +23,16 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
         return addReturn;
     }
 
-    /** Recursive add method. Inserts the given object into the tree.
-     @post addReturn is set true if the item is inserted,
-     false if the item is already in the tree.
-     @param localRoot The local root of the subtree
-     @param item The object to be inserted
-     @return The new local root of the subtree with the item inserted
+    /**
+     * Recursive add method. Inserts the given object into the tree.
+     *
+     * @param localRoot The local root of the subtree
+     * @param item      The object to be inserted
+     * @return The new local root of the subtree with the item inserted
+     * @post addReturn is set true if the item is inserted,
+     * false if the item is already in the tree.
      */
+    private AVLNode<E> add(AVLNode<E> localRoot, E item) {
+
+    }
 }
