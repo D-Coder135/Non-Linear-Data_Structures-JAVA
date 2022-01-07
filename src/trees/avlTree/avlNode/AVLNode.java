@@ -26,6 +26,14 @@ public class AVLNode<E> extends BinaryTree.Node<E> {
         super(item);
     }
 
+    /** add starter method.
+     @pre the item to insert implements the Comparable interface.
+     @param item The item being inserted.
+     @return true if the object is inserted; false
+     if the object already exists in the tree
+     @throws ClassCastException if item is not Comparable
+     */
+
     /**
      * Return a string representation of this object.
      * The balance value is appended to the contents.
