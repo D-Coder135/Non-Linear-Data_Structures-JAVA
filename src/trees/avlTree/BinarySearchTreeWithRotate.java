@@ -10,4 +10,6 @@ import trees.binarySearchTree.implementation.BinarySearchTree;
  */
 
 public class BinarySearchTreeWithRotate<E extends Comparable<E>> extends BinarySearchTree<E> {
+    // Methods
+
 }
