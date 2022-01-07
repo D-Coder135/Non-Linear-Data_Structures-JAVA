@@ -8,4 +8,13 @@ import trees.binaryTree.implementation.BinaryTree;
  */
 
 public class AVLNode<E> extends BinaryTree.Node<E> {
+
+    /**
+     * Construct a node with the given item as the data field.
+     *
+     * @param item The data field
+     */
+    public AVLNode(E item) {
+        super(item);
+    }
 }
