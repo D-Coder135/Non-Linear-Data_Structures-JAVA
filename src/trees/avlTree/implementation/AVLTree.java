@@ -38,5 +38,9 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             increase = true;
             return new AVLNode<>(item);
         }
+
+        if (item.compareTo(localRoot.data) == 0) {
+
+        }
     }
 }
