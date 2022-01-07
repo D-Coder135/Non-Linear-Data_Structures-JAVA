@@ -1,4 +1,4 @@
 package trees.avlTree.implementation;
 
-public class AVLTree {
+public class AVLTree<E extends Comparable<E>> {
 }
