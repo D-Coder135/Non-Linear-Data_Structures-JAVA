@@ -30,4 +30,16 @@ public class BinarySearchTreeWithRotate<E extends Comparable<E>> extends BinaryS
         temp.right = root;
         return temp;
     }
+
+/** Method to perform a left rotation.
+ *
+ * @param root The root of the binary tree to be rotated
+ * @return The new root of the rotated tree
+ * @pre root is the root of a binary search tree.
+ * @post root.right is the root of a binary search tree,
+ * root.right.right is raised one level,
+ * root.right.left does not change levels,
+ * root.left is lowered one level,
+ * the new root is returned.
+ */
 }
