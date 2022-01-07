@@ -69,10 +69,6 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
         }
     }
 
-    private AVLNode<E> rebalanceRight(AVLNode<E> localRoot) {
-        return null;
-    }
-
     private void decerementBalance(AVLNode<E> node) {
         node.balance--;
         if (node.balance == AVLNode.BALANCED) {
@@ -106,6 +102,27 @@ public class AVLTree<E extends Comparable<E>> extends BinarySearchTreeWithRotate
             localRoot.left = rotateLeft(leftChild);
         } else {
             leftChild.balance = AVLNode.BALANCED;
+            localRoot.balance = AVLNode.BALANCED;
+        }
+        return (AVLNode<E>) rotateRight(localRoot);
+    }
+
+    private AVLNode<E> rebalanceRight(AVLNode<E> localRoot) {
+        AVLNode<E> rightChild = (AVLNode<E>) localRoot.right;
+        if (rightChild.balance > AVLNode.BALANCED) {
+            AVLNode<E> rightLeftChild = (AVLNode<E>) rightChild.left;
+            if (rightLeftChild.balance < AVLNode.BALANCED) {
+                rightChild.balance = AVLNode.BALANCED;
+                rightLeftChild.balance = AVLNode.BALANCED;
+                localRoot.balance = AVLNode.RIGHT_HEAVY;
+            } else {
+                rightChild.balance = AVLNode.LEFT_HEAVY;
+                rightLeftChild.balance = AVLNode.BALANCED;
+                localRoot.balance = AVLNode.BALANCED;
+            }
+            localRoot.right = rotateLeft(rightChild);
+        } else {
+            rightChild.balance = AVLNode.BALANCED;
             localRoot.balance = AVLNode.BALANCED;
         }
         return (AVLNode<E>) rotateRight(localRoot);
